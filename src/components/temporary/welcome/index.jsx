@@ -1,13 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 import { render } from "storyblok-rich-text-react-renderer";
 
 import Container from "../../container";
+import mq from "../../../utils/mq";
 import LuckyDuckLogo from "../../../assets/svg/ld-logomark.svg";
 
 const WelcomeContainerOuter = styled.div`
   padding: 0px 60px;
+  ${mq.mobile(css`
+    padding: 0px 10px;
+  `)};
 `;
 
 const WelcomeContainer = styled(Container)`
@@ -18,6 +22,9 @@ const WelcomeContainer = styled(Container)`
   border-radius: 20px;
   flex-direction: column;
   padding: 60px;
+  ${mq.mobile(css`
+    padding: 40px 20px;
+  `)};
 `;
 
 const Title = styled.h1`
@@ -29,6 +36,9 @@ const Title = styled.h1`
   b {
     font-weight: 600;
   }
+  ${mq.mobile(css`
+    font-size: 22px;
+  `)};
 `;
 
 const LogoContainer = styled.div`

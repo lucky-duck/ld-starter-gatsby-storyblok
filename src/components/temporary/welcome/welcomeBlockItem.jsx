@@ -11,6 +11,7 @@ const BlockItem = styled.div`
   border-radius: 20px;
   padding: 40px 20px;
   height: fit-content;
+  max-width: calc(100vw - 20px);
 `;
 
 const BlockTitle = styled.div`
@@ -26,6 +27,7 @@ const BlockText = styled.div`
     padding: 2px 5px;
     border-radius: 5px;
     font-size: 12px;
+    word-break: break-all;
   }
 `;
 
