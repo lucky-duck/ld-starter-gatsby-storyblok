@@ -257,18 +257,16 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
   import { scrollLocker } from "../utils/scrollLocker";
   
    function myCoolComponent() {
-        
         const [locked, setLocked] = useState(false)
-        
         function toggleLock() {
-            if(locked) {
-                  scrollLocker.unlock();
-                  setLocked(false)
-                } else {
-                  scrollLocker.lock();
-                  setLocked(true)
-                }
+          if(locked) {
+              scrollLocker.unlock();
+              setLocked(false)
+            } else {
+              scrollLocker.lock();
+              setLocked(true)
             }
+          }
         }
         
         return (
