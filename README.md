@@ -132,4 +132,35 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ## 📚 Included Libraries
 
+**React Libraries**
 
+- Babel Plugin Styled Components
+- Date Fns
+- Framer Motion
+- React Cool Inview
+- React Cool OnClickOutside
+- React Helmet
+- React Swiper
+- Storyblok JS Client
+- Storyblok React
+- Storyblok Rich Text React Renderer
+- Styled Components
+- Styled System
+- Swiper
+- URL Loader
+
+**Gatsby Plugins**
+
+- Gatsby Image
+- Gatsby Plugin Catch Links
+- Gatsby Plugin Google Fonts
+- Gatsby Plugin Manifest
+- Gatsby Plugin React Helmet
+- Gatsby Plugin React SVG
+- Gatsby Plugin SASS
+- Gatsby Plugin Sharp
+- Gatsby Plugin Sitemap
+- Gatsby Plygin Styled Components
+- Gatsby Source Filesystem
+- Gatsby Source Storyblok
+- Gatsby Transformer Sharp
