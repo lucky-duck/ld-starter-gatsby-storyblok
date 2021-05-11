@@ -10,11 +10,13 @@
 
 Kick off your project with this starter kit, jam-packed with useful utils, templates and libraries to help get you going, faster 🚀
 
-## Problems? Questions?
 
-If you run into any issues, questions, or have a suggestion, hit up Josh on Slack. 
+## Problems? Questions? Suggestions?
+
+If you run into any issues, questions, or have a suggestion, hit up Josh Cawthorne on Slack. 
 
 Don't work at Lucky Duck? That's fine! <a href="mailto:josh@luckyduck.co">Email josh instead.</a>
+
 
 ## Features
 
