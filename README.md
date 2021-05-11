@@ -11,14 +11,14 @@
 Kick off your project with this starter kit, jam-packed with useful utils, templates and libraries to help get you going, faster 💫
 
 
-## Problems? Questions? Suggestions?
+## Problems? Questions? Suggestions? 💬
 
 If you run into any issues, questions, or have a suggestion, hit up Josh Cawthorne on Slack. 
 
 Don't work at Lucky Duck? That's fine! <a href="mailto:josh@luckyduck.co">Email josh instead.</a>
 
 
-## Features
+## Features 😎
 
 - Designed to quickly create a project with Storyblok CMS integration
 - Helpful templates and demo components to quickly understand the basics
@@ -28,13 +28,13 @@ Don't work at Lucky Duck? That's fine! <a href="mailto:josh@luckyduck.co">Email 
 - Supports quick clone and deploying with Netlify (see **quick deploy** section)
 
 
-## Prerequisites
+## Prerequisites 🚨
 
 - Node (Recommended v8.2.0 or higher)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 
 
-## 🚀 Quick Deploy
+## Quick Deploy 🚀
 
 3.  **Clone with and host Netlify**
 
@@ -43,7 +43,7 @@ Don't work at Lucky Duck? That's fine! <a href="mailto:josh@luckyduck.co">Email 
     <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lucky-duck/ld-starter-gatsby-storyblok"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" target="_blank"></a>
 
 
-## 🏎 Quick start
+## Quick start 🏎
 
 1.  **Create a Gatsby site.**
 
@@ -68,7 +68,7 @@ Don't work at Lucky Duck? That's fine! <a href="mailto:josh@luckyduck.co">Email 
     Your site is now running at `http://localhost:8000`.
     
 
-## 🧐 Starter Overview
+## Starter Overview 🧐
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
