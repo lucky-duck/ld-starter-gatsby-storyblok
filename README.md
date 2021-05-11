@@ -34,6 +34,15 @@ Kick off your project with this starter kit, jam-packed with useful utils, templ
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 
 
+## 🚀 Quick Deploy
+
+3.  **Clone with and host Netlify**
+
+    Use the button below to quickly create a clone of this starter kit and host it on Netlify:
+    
+    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lucky-duck/ld-starter-gatsby-storyblok"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" target="_blank"></a>
+
+
 ## 🏎 Quick start
 
 1.  **Create a Gatsby site.**
@@ -57,13 +66,6 @@ Kick off your project with this starter kit, jam-packed with useful utils, templ
 3.  **Open the source code and start editing**
 
     Your site is now running at `http://localhost:8000`.
-    
-    
-3.  **Deploy your masterpiece!**
-
-    Lucky Duck use Netlify to host Gatsby projects. Use the button below to quickly deloy your own copy of this start kit:
-    
-    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lucky-duck/ld-starter-gatsby-storyblok"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" target="_blank"></a>
     
 
 ## 🧐 Starter Overview
