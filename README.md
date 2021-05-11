@@ -130,41 +130,6 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 12. **`README.md`**: A text file containing useful reference information about your project.
 
 
-## 📚 Included Libraries
-
-**React Libraries**
-
-- Babel Plugin Styled Components
-- Date Fns
-- Framer Motion
-- React Cool Inview
-- React Cool OnClickOutside
-- React Helmet
-- React Swiper
-- Storyblok JS Client
-- Storyblok React
-- Storyblok Rich Text React Renderer
-- Styled Components
-- Styled System
-- Swiper
-- URL Loader
-
-**Gatsby Plugins**
-
-- Gatsby Image
-- Gatsby Plugin Catch Links
-- Gatsby Plugin Google Fonts
-- Gatsby Plugin Manifest
-- Gatsby Plugin React Helmet
-- Gatsby Plugin React SVG
-- Gatsby Plugin SASS
-- Gatsby Plugin Sharp
-- Gatsby Plugin Sitemap
-- Gatsby Plygin Styled Components
-- Gatsby Source Filesystem
-- Gatsby Source Storyblok
-- Gatsby Transformer Sharp
-
 ## 🏗 Included Utils
 
 ### clientOnly.js
@@ -176,7 +141,7 @@ Wrap your components, pages or Storyblok adapters with this to ensure they only 
 import React from "react";
 import ClientOnly from "../utils/clientOnly";
 
-function myCoolComponent() {
+function MyCoolComponent() {
   return (
     <ClientOnly>
       <div>I'll only render on the client side. Neat, huh?</div>
@@ -184,7 +149,7 @@ function myCoolComponent() {
   );
 }
 
-export default myCoolComponent;
+export default MyCoolComponent;
 ```
     
 ### constants.js
@@ -231,7 +196,7 @@ const ComponentContainer = styled.div`
   `)};
 `;
 
-function myCoolComponent() {
+function MyCoolComponent() {
   return (
     <ComponentContainer>
       Check out Mr. Responsive
@@ -239,7 +204,7 @@ function myCoolComponent() {
   );
 }
 
-export default myCoolComponent;
+export default MyCoolComponent;
 ```
  
 ### parseStoryblokLink.js
@@ -251,13 +216,13 @@ Used to parse between the different types of links Storyblok return.
 import React from "react";
 import parseStoryblokLink from "../utils/parse-storyblok-link";
 
-function myCoolComponent({link}) {
+function MyCoolComponent({link}) {
   return (
     <a href={parseStoryblokLink(link)}>Link here!</a>
   );
 }
 
-export default myCoolComponent;
+export default MyCoolComponent;
 ```
   
 ### scrollLocker.js
@@ -269,7 +234,7 @@ Used to lock the page in place. Intended for use with pop-up overlays or full-sc
 import React, {useState} from "react";
 import { scrollLocker } from "../utils/scrollLocker";
 
-function myCoolComponent() {
+function MyCoolComponent() {
   const [locked, setLocked] = useState(false)
   function toggleLock() {
     if(locked) {
@@ -287,7 +252,7 @@ function myCoolComponent() {
   );
 }
 
-export default myCoolComponent;
+export default MyCoolComponent;
 ```
   
 ### withLocation.js
@@ -299,13 +264,13 @@ Used to provide the component with information on its location on the site. Supp
 import React from "react";
 import withLocation from "../utils/withLocation";
   
- function myCoolComponent({location}) {
+ function MyCoolComponent({location}) {
     return (
       <div>My Cool Component here, checking in from {location.pathname}!</div>
     );
   }
     
-  export default withLocation(myCoolComponent);
+  export default withLocation(MyCoolComponent);
 ```
 
 ### gatsbyStoryblokImage
@@ -322,7 +287,7 @@ Used to convert Storyblok image repsonses into a `gatsby-image` compatible forma
   import { getFixedGatsbyImage } from "../utils/gatsby-storyblok-image";
 
 
-  function myCoolComponent({ image }) {
+  function MyCoolComponent({ image }) {
     const fixedImage = getFixedGatsbyImage(image, {
       width: 900
     })
@@ -334,7 +299,7 @@ Used to convert Storyblok image repsonses into a `gatsby-image` compatible forma
     )
   }
 
-  export default myCoolComponent
+  export default MyCoolComponent
   ```
   
 #### Fluid Image Usage
@@ -345,7 +310,7 @@ Used to convert Storyblok image repsonses into a `gatsby-image` compatible forma
   import LazyImage from "../components/lazyImage";
   import { getFluidGatsbyImage } from "../utils/gatsby-storyblok-image";
 
-  function myCoolComponent({ image }) {
+  function MyCoolComponent({ image }) {
     return (
       <div>
         <LazyImage fluid={getFluidGatsbyImage(image)} alt={"A fluid image, woo!"}/>
@@ -353,5 +318,66 @@ Used to convert Storyblok image repsonses into a `gatsby-image` compatible forma
     )
   }
 
-  export default myCoolComponent
+  export default MyCoolComponent
   ```
+
+## 📚 Included Libraries
+
+Some of our favourite libraries and plugins come installed out of the box with the starter kit. See below for some brief info on each library and some tailor-made examples of usage.
+
+## React Libraries
+
+### Date Fns
+Provides a simple way to format date and times.
+<a href="https://date-fns.org/" target="_blank">Library Link</a>
+
+#### Usage
+
+```
+  import React from "react";
+  import { format } from 'date-fns'
+  
+  function MyCoolComponent({publishDate}) {
+    return (
+      <div>Article published: {format(new Date(publishDate), "do LLLL yyyy")}</div>
+    )
+  }
+  
+  export default MyCoolComponent
+```
+
+- Framer Motion
+- React Cool Inview
+- React Cool OnClickOutside
+- React Helmet
+- React Swiper
+- Storyblok JS Client
+- Storyblok React
+- Storyblok Rich Text React Renderer
+- Styled Components
+- Styled System
+- Swiper
+- URL Loader
+
+
+## Gatsby Plugins
+
+- Gatsby Image
+- Gatsby Plugin Catch Links
+- Gatsby Plugin Google Fonts
+- Gatsby Plugin Manifest
+- Gatsby Plugin React Helmet
+- Gatsby Plugin React SVG
+- Gatsby Plugin SASS
+- Gatsby Plugin Sharp
+- Gatsby Plugin Sitemap
+- Gatsby Plygin Styled Components
+- Gatsby Source Filesystem
+- Gatsby Source Storyblok
+- Gatsby Transformer Sharp
+
+
+## Babel Plugins
+
+### Babel Plugin Styled Components
+<a href="https://github.com/styled-components/babel-plugin-styled-components" target="_blank">Plugin Link</a>
