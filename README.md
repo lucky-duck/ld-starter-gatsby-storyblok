@@ -181,6 +181,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
         </ClientOnly>
       );
     }
+    
+    export default myCoolComponent;
     ```
     
 - constants.js
@@ -232,6 +234,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
           </ComponentContainer>
         );
     }
+    
+    export default myCoolComponent;
     ```
  
 - parseStoryblokLink.js
@@ -246,7 +250,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
         <a href={parseStoryblokLink(link)}>Link here!</a>
       );
     }
-
+    
+    export default myCoolComponent;
   ```
   
 - scrollLocker.js
@@ -273,7 +278,65 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
         <button onClick={() => toggleLock()}>Toggle Lock</button>
       );
     }
+    
+    export default myCoolComponent;
   ```
   
 - withLocation.js
+  - Used to provide the component with information on its location on the site. Supports SSR.
+
+  ```
+  import React from "react";
+  import withLocation from "../utils/withLocation";
+  
+   function myCoolComponent({location}) {
+      return (
+        <div>My Cool Component here, checking in from {location.pathname}!</div>
+      );
+    }
+    
+    export default withLocation(myCoolComponent);
+  ```
+
 - gatsbyStoryblokImage
+  - Used to convert Storyblok image repsonses into a `gatsby-image` compatible format. Can be used for either a **fixed image** or a **fluid image**. Works well with the included `lazyImage.js` component.
+
+  ```
+  import React from "react";
+  
+  import LazyImage from "../components/lazyImage";
+  import { getFixedGatsbyImage } from "../utils/gatsby-storyblok-image";
+
+
+  function myCoolComponent({ image }) {
+    const fixedImage = getFixedGatsbyImage(image, {
+      width: 900
+    })
+
+    return (
+      <div>
+        <LazyImage fixed={fixedProps} alt={"A fixed image, woo!"}/>
+      </div>
+    )
+  }
+
+  export default myCoolComponent
+  ```
+  
+    ```
+  import React from "react";
+  
+  import LazyImage from "../components/lazyImage";
+  import { getFluidGatsbyImage } from "../utils/gatsby-storyblok-image";
+
+
+  function myCoolComponent({ image }) {
+    return (
+      <div>
+        <LazyImage fluid={getFluidGatsbyImage(image)} alt={"A fluid image, woo!"}/>
+      </div>
+    )
+  }
+
+  export default myCoolComponent
+  ```
