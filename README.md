@@ -62,6 +62,7 @@ Kick off your project with this starter kit, jam-packed with useful utils, templ
 3.  **Deploy your masterpiece!**
 
     Lucky Duck use Netlify to host Gatsby projects. Use the button below to quickly deloy your own copy of this start kit:
+    
     <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lucky-duck/ld-starter-gatsby-storyblok/&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
     
 
