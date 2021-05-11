@@ -10,15 +10,15 @@
 
 Kick off your project with this starter kit, jam-packed with useful utils, templates and libraries to help get you going, faster 🚀
 
-## 🚀 Quick start
+## Quick start
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+    Use the Gatsby CLI to create a new site, specifying the ld gatsby storyblok starter.
 
     ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    # create a new Gatsby site using the ld-gatsby-storyblok-starter
+    gatsby new my-site-name https://github.com/lucky-duck/ld-starter-gatsby-storyblok
     ```
 
 1.  **Start developing.**
@@ -26,7 +26,7 @@ Kick off your project with this starter kit, jam-packed with useful utils, templ
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-hello-world-starter/
+    cd my-site-name/
     gatsby develop
     ```
 
