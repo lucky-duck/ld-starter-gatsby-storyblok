@@ -242,9 +242,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     import parseStoryblokLink from "../utils/parse-storyblok-link";
     
     function myCoolComponent({link}) {
-        return (
-          <a href={parseStoryblokLink(link)}>Link here!</a>
-        );
+      return (
+        <a href={parseStoryblokLink(link)}>Link here!</a>
+      );
     }
 
   ```
@@ -257,21 +257,21 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
   import { scrollLocker } from "../utils/scrollLocker";
   
    function myCoolComponent() {
-        const [locked, setLocked] = useState(false)
-        function toggleLock() {
-          if(locked) {
-              scrollLocker.unlock();
-              setLocked(false)
-            } else {
-              scrollLocker.lock();
-              setLocked(true)
-            }
+      const [locked, setLocked] = useState(false)
+      function toggleLock() {
+        if(locked) {
+            scrollLocker.unlock();
+            setLocked(false)
+          } else {
+            scrollLocker.lock();
+            setLocked(true)
           }
         }
-        
-        return (
-          <button onClick={() => toggleLock()}>Toggle Lock</button>
-        );
+      }
+
+      return (
+        <button onClick={() => toggleLock()}>Toggle Lock</button>
+      );
     }
   ```
   
