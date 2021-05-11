@@ -189,6 +189,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
   -   
 - mq.js
   - Stands for `Media Queries`. Incredibly useful component that allows you to quickly create uniform responsive designs with `styled-components`. **Note:** Breakpoints are controlled in `contstants.js`.
+  
       ```
     import React from "react";
     import styled, {css} from "styled-components"
@@ -225,11 +226,11 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     `;
     
     function myCoolComponent() {
-      return (
-        <ComponentContainer>
-          Check out Mr. Responsive
-        </ComponentContainer>
-      );
+        return (
+          <ComponentContainer>
+            Check out Mr. Responsive
+          </ComponentContainer>
+        );
     }
     ```
  
