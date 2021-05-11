@@ -40,7 +40,7 @@ Don't work at Lucky Duck? That's fine! <a href="mailto:josh@luckyduck.co">Email 
 
 Use the button below to quickly create a clone of this starter kit and host it on Netlify:
     
-    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lucky-duck/ld-starter-gatsby-storyblok"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" target="_blank"></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/lucky-duck/ld-starter-gatsby-storyblok"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" target="_blank"></a>
 
 
 ## Quick start 🏎
