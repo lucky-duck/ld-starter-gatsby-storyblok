@@ -329,7 +329,6 @@ Some of our favourite libraries and plugins come installed out of the box with t
 
 ### Date Fns
 Provides a simple way to format date and times.
-<a href="https://date-fns.org/" target="_blank">Library Link</a>
 
 #### Usage
 
@@ -346,7 +345,63 @@ Provides a simple way to format date and times.
   export default MyCoolComponent
 ```
 
-- Framer Motion
+#### Links
+<a href="https://date-fns.org/" target="_blank">Library Link</a>
+<a href="https://date-fns.org/docs/Getting-Started" target="_blank">Full Library Documentation</a>
+
+
+### Framer Motion
+An awesome animation library that works perfectly with `styled-components` to create 60fps animations.
+
+#### Usage
+
+```
+  import React, {useState} from "react";
+  import styled from "styled-components"
+  import { motion } from 'framer-motion'
+  
+  const AnimatedTitle = styled(motion.div)`
+    font-size: 18px;
+    color: red;
+  `;
+  
+  const TitleAnim = {
+    hidden: { opacity: 0, y: 10 },
+    show: { 
+      opacity: 1, 
+      y: 0, 
+      transition: {
+        delay: 0.3,
+        transition: 0.5,
+        ease: "easeOut"
+      } 
+    },
+  };
+  
+  function MyCoolComponent() {
+    const [doAnimate, setDoAnimate] = useState(false);
+    return (
+      <div>
+        <Title 
+          variants={TitleAnim}
+          initial="hidden"
+          animate={doAnimate ? "show" : "hidden"}
+        >
+          Animated magic!
+        </Title>
+        <button onClick={() => setDoAnimate(!doAnimate)}>Toggle animation</button>
+      </div>
+    )
+  }
+  
+  export default MyCoolComponent
+```
+
+#### Links
+<a href="https://date-fns.org/" target="_blank">Library Link</a>
+<a href="https://date-fns.org/docs/Getting-Started" target="_blank">Full Library Documentation</a>
+
+
 - React Cool Inview
 - React Cool OnClickOutside
 - React Helmet
