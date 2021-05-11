@@ -3,7 +3,7 @@ module.exports = {
     title: "LD Gatsby Storyblok Starter",
     description:
       "Starter kit to help create awesome things using Gatsby, powered by Storyblok.",
-    siteUrl: "https://www.luckyduck.co/",
+    siteUrl: "https://ld-gatsby-storyblok-starter.netlify.app/",
   },
   plugins: [
     {
