@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import StoryblokComponent from "../components/storyblok/storyblokComponent";
 
 function StoryblokPage({ pageContext }) {
-  console.log("Page Context", pageContext);
   const content = useMemo(() => {
     const { story } = pageContext;
     const parsedContent = JSON.parse(story.content);

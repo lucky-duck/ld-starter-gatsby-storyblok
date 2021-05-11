@@ -37,7 +37,6 @@ const BlockImageContainer = styled.div`
 `;
 
 function WelcomeBlockItem({ content }) {
-  console.log(content);
   return (
     <BlockItem>
       <BlockTitle>{content.title}</BlockTitle>

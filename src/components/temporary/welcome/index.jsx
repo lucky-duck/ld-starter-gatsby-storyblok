@@ -53,7 +53,6 @@ function Welcome({ text, title }) {
           <LuckyDuckLogo height={"60px"} />
         </LogoContainer>
         <Title>{render(title)}</Title>
-        {console.log(title)}
       </WelcomeContainer>
     </WelcomeContainerOuter>
   );
