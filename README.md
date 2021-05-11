@@ -167,139 +167,151 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ## 🏗 Included Utils
 
-- clientOnly.js
-  - Wrap your components, pages or Storyblok adapters with this to ensure they only render on the client-side. Useful for libraries that don't support SSR.
+### clientOnly.js
+Wrap your components, pages or Storyblok adapters with this to ensure they only render on the client-side. Useful for libraries that don't support SSR.
   
-    ```
-    import React from "react";
-    import ClientOnly from "../utils/clientOnly";
+#### Usage
+
+```
+import React from "react";
+import ClientOnly from "../utils/clientOnly";
+
+function myCoolComponent() {
+  return (
+    <ClientOnly>
+      <div>I'll only render on the client side. Neat, huh?</div>
+    </ClientOnly>
+  );
+}
+
+export default myCoolComponent;
+```
     
-    function myCoolComponent() {
-      return (
-        <ClientOnly>
-          <div>I'll only render on the client side. Neat, huh?</div>
-        </ClientOnly>
-      );
-    }
-    
-    export default myCoolComponent;
-    ```
-    
-- constants.js
-  - The clue's in the name, this holds constants for you.
-- isCurrentPathCreator.js
+### constants.js
+The clue's in the name, this holds constants for you.
+
+### isCurrentPathCreator.js
   -   
-- mq.js
-  - Stands for `Media Queries`. Incredibly useful component that allows you to quickly create uniform responsive designs with `styled-components`. **Note:** Breakpoints are controlled in `contstants.js`.
+### mq.js
+Stands for `Media Queries`. Incredibly useful component that allows you to quickly create uniform responsive designs with `styled-components`. **Note:** Breakpoints are controlled in `contstants.js`.
   
-      ```
-    import React from "react";
-    import styled, {css} from "styled-components"
-    import mq from "../utils/mq";
-    
-    const ComponentContainer = styled.div`
-        height: 400px;
-        width: 400px;
-        font-size: 18px;
+#### Usage
+```  
+import React from "react";
+import styled, {css} from "styled-components"
+import mq from "../utils/mq";
 
-        ${mq.desktopSmall(css`
-          height: 350px;
-          width: 350px;
-          font-size: 16px;
-        `)};
+const ComponentContainer = styled.div`
+    height: 400px;
+    width: 400px;
+    font-size: 18px;
 
-        ${mq.tablet(css`
-          height: 300px;
-          width: 300px;
-          font-size: 14px;
-        `)};
+    ${mq.desktopSmall(css`
+      height: 350px;
+      width: 350px;
+      font-size: 16px;
+    `)};
 
-        ${mq.mobile(css`
-          height: 200px;
-          width: 200px;
-          font-size: 12px;
-        `)};
+    ${mq.tablet(css`
+      height: 300px;
+      width: 300px;
+      font-size: 14px;
+    `)};
 
-        ${mq.mobileSmall(css`
-          height: 100px;
-          width: 100px;
-          font-size: 10px;
-        `)};
-    `;
-    
-    function myCoolComponent() {
-        return (
-          <ComponentContainer>
-            Check out Mr. Responsive
-          </ComponentContainer>
-        );
-    }
-    
-    export default myCoolComponent;
-    ```
+    ${mq.mobile(css`
+      height: 200px;
+      width: 200px;
+      font-size: 12px;
+    `)};
+
+    ${mq.mobileSmall(css`
+      height: 100px;
+      width: 100px;
+      font-size: 10px;
+    `)};
+`;
+
+function myCoolComponent() {
+    return (
+      <ComponentContainer>
+        Check out Mr. Responsive
+      </ComponentContainer>
+    );
+}
+
+export default myCoolComponent;
+```
  
-- parseStoryblokLink.js
-  - Used to parse between the different types of links Storyblok return.
+### parseStoryblokLink.js
+Used to parse between the different types of links Storyblok return.
   
-  ```
-    import React from "react";
-    import parseStoryblokLink from "../utils/parse-storyblok-link";
-    
-    function myCoolComponent({link}) {
-      return (
-        <a href={parseStoryblokLink(link)}>Link here!</a>
-      );
-    }
-    
-    export default myCoolComponent;
-  ```
+#### Usage
   
-- scrollLocker.js
-  - Used to lock the page in place. Intended for use with pop-up overlays or full-screen menus.
+```
+import React from "react";
+import parseStoryblokLink from "../utils/parse-storyblok-link";
+
+function myCoolComponent({link}) {
+  return (
+    <a href={parseStoryblokLink(link)}>Link here!</a>
+  );
+}
+
+export default myCoolComponent;
+```
   
-  ```
-  import React, {useState} from "react";
-  import { scrollLocker } from "../utils/scrollLocker";
+### scrollLocker.js
+Used to lock the page in place. Intended for use with pop-up overlays or full-screen menus.
   
-   function myCoolComponent() {
-      const [locked, setLocked] = useState(false)
-      function toggleLock() {
-        if(locked) {
-            scrollLocker.unlock();
-            setLocked(false)
-          } else {
-            scrollLocker.lock();
-            setLocked(true)
-          }
-        }
+#### Usage
+  
+```
+import React, {useState} from "react";
+import { scrollLocker } from "../utils/scrollLocker";
+
+function myCoolComponent() {
+  const [locked, setLocked] = useState(false)
+  function toggleLock() {
+    if(locked) {
+        scrollLocker.unlock();
+        setLocked(false)
+      } else {
+        scrollLocker.lock();
+        setLocked(true)
       }
-
-      return (
-        <button onClick={() => toggleLock()}>Toggle Lock</button>
-      );
     }
-    
-    export default myCoolComponent;
-  ```
-  
-- withLocation.js
-  - Used to provide the component with information on its location on the site. Supports SSR.
+  }
 
-  ```
-  import React from "react";
-  import withLocation from "../utils/withLocation";
-  
-   function myCoolComponent({location}) {
-      return (
-        <div>My Cool Component here, checking in from {location.pathname}!</div>
-      );
-    }
-    
-    export default withLocation(myCoolComponent);
-  ```
+  return (
+    <button onClick={() => toggleLock()}>Toggle Lock</button>
+  );
+}
 
-- gatsbyStoryblokImage
-  - Used to convert Storyblok image repsonses into a `gatsby-image` compatible format. Can be used for either a **fixed image** or a **fluid image**. Works well with the included `lazyImage.js` component.
+export default myCoolComponent;
+```
+  
+### withLocation.js
+Used to provide the component with information on its location on the site. Supports SSR.
+
+#### Usage
+
+```
+import React from "react";
+import withLocation from "../utils/withLocation";
+  
+ function myCoolComponent({location}) {
+    return (
+      <div>My Cool Component here, checking in from {location.pathname}!</div>
+    );
+  }
+    
+  export default withLocation(myCoolComponent);
+```
+
+### gatsbyStoryblokImage
+Used to convert Storyblok image repsonses into a `gatsby-image` compatible format. Can be used for either a **fixed image** or a **fluid image**. Works well with the included `lazyImage.js` component.
+
+#### Fixed Image Usage
 
   ```
   import React from "react";
@@ -323,19 +335,20 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
   export default myCoolComponent
   ```
   
-    ```
+#### Fluid Image Usage
+  
+  ```
   import React from "react";
   
   import LazyImage from "../components/lazyImage";
   import { getFluidGatsbyImage } from "../utils/gatsby-storyblok-image";
 
-
   function myCoolComponent({ image }) {
-    return (
-      <div>
-        <LazyImage fluid={getFluidGatsbyImage(image)} alt={"A fluid image, woo!"}/>
-      </div>
-    )
+      return (
+        <div>
+          <LazyImage fluid={getFluidGatsbyImage(image)} alt={"A fluid image, woo!"}/>
+        </div>
+      )
   }
 
   export default myCoolComponent
