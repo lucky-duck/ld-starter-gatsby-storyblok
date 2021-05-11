@@ -50,7 +50,6 @@ Use the button below to quickly create a clone of this starter kit and host it o
     Use the Gatsby CLI to create a new site, specifying the ld gatsby storyblok starter.
 
     ```shell
-    # create a new Gatsby site using the ld-gatsby-storyblok-starter
     gatsby new my-site-name https://github.com/lucky-duck/ld-starter-gatsby-storyblok
     ```
 
@@ -60,6 +59,9 @@ Use the button below to quickly create a clone of this starter kit and host it o
 
     ```shell
     cd my-site-name/
+    ```
+    
+    ```shell
     gatsby develop
     ```
 
@@ -137,7 +139,7 @@ Wrap your components, pages or Storyblok adapters with this to ensure they only 
   
 #### Usage
 
-```
+```javascript
 import React from "react";
 import ClientOnly from "../utils/clientOnly";
 
