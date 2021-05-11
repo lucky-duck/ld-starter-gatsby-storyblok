@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Lucky Duck's Gatsby x Storyblok Start Kit
+  Lucky Duck's Gatsby x Storyblok Starter Kit
 </h1>
 
 Kick off your project with this starter kit, jam-packed with useful utils, templates and libraries to help get you going, faster 💫
