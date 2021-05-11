@@ -8,7 +8,7 @@
   Lucky Duck's Gatsby x Storyblok Start Kit
 </h1>
 
-Kick off your project with this starter kit, jam-packed with useful utils, templates and libraries to help get you going, faster 🚀
+Kick off your project with this starter kit, jam-packed with useful utils, templates and libraries to help get you going, faster 💫
 
 
 ## Problems? Questions? Suggestions?
@@ -20,19 +20,12 @@ Don't work at Lucky Duck? That's fine! <a href="mailto:josh@luckyduck.co">Email 
 
 ## Features
 
-- A simple landing page with blog functionality built with Netlify CMS
-- Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
-- Create Blog posts from Netlify CMS
-- Tags: Separate page for posts under each tag
-- Basic directory organization
-- Uses Bulma for styling, but size is reduced by `purge-css-plugin`
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-- Uses `gatsby-image` with Netlify-CMS preview support
-- Separate components for everything
-- Netlify deploy configuration
-- Netlify function support, see `lambda` folder
-- Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
-- ..and more
+- Designed to quickly create a project with Storyblok CMS integration
+- Helpful templates and demo components to quickly understand the basics
+- Includes some of our favourite libraries pre-installed
+- Also includes some helpful utils that we've created while working on Gatsby/Storyblok sites
+- Uses `styled-components` out of the box.
+- Supports quick clone and deploying with Netlify (see **quick deploy** section)
 
 
 ## Prerequisites
