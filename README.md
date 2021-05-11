@@ -10,6 +10,30 @@
 
 Kick off your project with this starter kit, jam-packed with useful utils, templates and libraries to help get you going, faster 🚀
 
+
+## Features
+
+- A simple landing page with blog functionality built with Netlify CMS
+- Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
+- Create Blog posts from Netlify CMS
+- Tags: Separate page for posts under each tag
+- Basic directory organization
+- Uses Bulma for styling, but size is reduced by `purge-css-plugin`
+- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
+- Uses `gatsby-image` with Netlify-CMS preview support
+- Separate components for everything
+- Netlify deploy configuration
+- Netlify function support, see `lambda` folder
+- Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
+- ..and more
+
+
+## Prerequisites
+
+- Node (Recommended v8.2.0 or higher)
+- [Gatsby CLI](https://www.gatsbyjs.org/docs/)
+
+
 ## 🏎 Quick start
 
 1.  **Create a Gatsby site.**
@@ -21,7 +45,7 @@ Kick off your project with this starter kit, jam-packed with useful utils, templ
     gatsby new my-site-name https://github.com/lucky-duck/ld-starter-gatsby-storyblok
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -30,9 +54,16 @@ Kick off your project with this starter kit, jam-packed with useful utils, templ
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing**
 
-    Your site is now running at `http://localhost:8000`!
+    Your site is now running at `http://localhost:8000`.
+    
+    
+3.  **Deploy your masterpiece!**
+
+    Lucky Duck use Netlify to host Gatsby projects. Use the button below to quickly deloy your own copy of this start kit:
+    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lucky-duck/ld-starter-gatsby-storyblok/&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+    
 
 ## 🧐 Starter Overview
 
@@ -95,4 +126,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
+
 ## 📚 Included Libraries
+
+
