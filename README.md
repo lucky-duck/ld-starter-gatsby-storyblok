@@ -196,33 +196,33 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     import mq from "../utils/mq";
     
     const ComponentContainer = styled.div`
-      height: 400px;
-      width: 400px;
-      font-size: 18px;
+        height: 400px;
+        width: 400px;
+        font-size: 18px;
 
-      ${mq.desktopSmall(css`
-        height: 350px;
-        width: 350px;
-        font-size: 16px;
-      `)};
+        ${mq.desktopSmall(css`
+          height: 350px;
+          width: 350px;
+          font-size: 16px;
+        `)};
 
-      ${mq.tablet(css`
-        height: 300px;
-        width: 300px;
-        font-size: 14px;
-      `)};
-      
-      ${mq.mobile(css`
-        height: 200px;
-        width: 200px;
-        font-size: 12px;
-      `)};
-      
-      ${mq.mobileSmall(css`
-        height: 100px;
-        width: 100px;
-        font-size: 10px;
-      `)};
+        ${mq.tablet(css`
+          height: 300px;
+          width: 300px;
+          font-size: 14px;
+        `)};
+
+        ${mq.mobile(css`
+          height: 200px;
+          width: 200px;
+          font-size: 12px;
+        `)};
+
+        ${mq.mobileSmall(css`
+          height: 100px;
+          width: 100px;
+          font-size: 10px;
+        `)};
     `;
     
     function myCoolComponent() {
@@ -235,6 +235,47 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ```
  
 - parseStoryblokLink.js
+  - Used to parse between the different types of links Storyblok return.
+  
+  ```
+    import React from "react";
+    import parseStoryblokLink from "../utils/parse-storyblok-link";
+    
+    function myCoolComponent({link}) {
+        return (
+          <a href={parseStoryblokLink(link)}>Link here!</a>
+        );
+    }
+
+  ```
+  
 - scrollLocker.js
+  - Used to lock the page in place. Intended for use with pop-up overlays or full-screen menus.
+  
+  ```
+  import React, {useState} from "react";
+  import { scrollLocker } from "../utils/scrollLocker";
+  
+   function myCoolComponent() {
+        
+        const [locked, setLocked] = useState(false)
+        
+        function toggleLock() {
+            if(locked) {
+                  scrollLocker.unlock();
+                  setLocked(false)
+                } else {
+                  scrollLocker.lock();
+                  setLocked(true)
+                }
+            }
+        }
+        
+        return (
+          <button onClick={() => toggleLock()}>Toggle Lock</button>
+        );
+    }
+  ```
+  
 - withLocation.js
 - gatsbyStoryblokImage
