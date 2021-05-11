@@ -8,33 +8,33 @@
   Lucky Duck's Gatsby x Storyblok Start Kit
 </h1>
 
-Kick off your project with this starter kit, jam-packed with useful utils, templates and libraries to help get you going, faster 🚀
+Kick off your project with this starter kit, jam-packed with useful utils, templates and libraries to help get you going, faster 💫
 
 
-## Features
+## Problems? Questions? Suggestions? 💬
 
-- A simple landing page with blog functionality built with Netlify CMS
-- Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
-- Create Blog posts from Netlify CMS
-- Tags: Separate page for posts under each tag
-- Basic directory organization
-- Uses Bulma for styling, but size is reduced by `purge-css-plugin`
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-- Uses `gatsby-image` with Netlify-CMS preview support
-- Separate components for everything
-- Netlify deploy configuration
-- Netlify function support, see `lambda` folder
-- Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
-- ..and more
+If you run into any issues, questions, or have a suggestion, hit up Josh Cawthorne on Slack. 
+
+Don't work at Lucky Duck? That's fine! <a href="mailto:josh@luckyduck.co">Email josh instead.</a>
 
 
-## Prerequisites
+## Features 😎
+
+- Designed to quickly create a project with Storyblok CMS integration
+- Helpful templates and demo components to quickly understand the basics
+- Includes some of our favourite libraries pre-installed
+- Also includes some helpful utils that we've created while working on Gatsby/Storyblok sites
+- Uses `styled-components` out of the box.
+- Supports quick clone and deploying with Netlify (see **quick deploy** section)
+
+
+## Prerequisites 🚨
 
 - Node (Recommended v8.2.0 or higher)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 
 
-## 🚀 Quick Deploy
+## Quick Deploy 🚀
 
 3.  **Clone with and host Netlify**
 
@@ -43,7 +43,7 @@ Kick off your project with this starter kit, jam-packed with useful utils, templ
     <a href="https://app.netlify.com/start/deploy?repository=https://github.com/lucky-duck/ld-starter-gatsby-storyblok"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" target="_blank"></a>
 
 
-## 🏎 Quick start
+## Quick start 🏎
 
 1.  **Create a Gatsby site.**
 
@@ -68,7 +68,7 @@ Kick off your project with this starter kit, jam-packed with useful utils, templ
     Your site is now running at `http://localhost:8000`.
     
 
-## 🧐 Starter Overview
+## Starter Overview 🧐
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
@@ -132,4 +132,35 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ## 📚 Included Libraries
 
+**React Libraries**
 
+- Babel Plugin Styled Components
+- Date Fns
+- Framer Motion
+- React Cool Inview
+- React Cool OnClickOutside
+- React Helmet
+- React Swiper
+- Storyblok JS Client
+- Storyblok React
+- Storyblok Rich Text React Renderer
+- Styled Components
+- Styled System
+- Swiper
+- URL Loader
+
+**Gatsby Plugins**
+
+- Gatsby Image
+- Gatsby Plugin Catch Links
+- Gatsby Plugin Google Fonts
+- Gatsby Plugin Manifest
+- Gatsby Plugin React Helmet
+- Gatsby Plugin React SVG
+- Gatsby Plugin SASS
+- Gatsby Plugin Sharp
+- Gatsby Plugin Sitemap
+- Gatsby Plygin Styled Components
+- Gatsby Source Filesystem
+- Gatsby Source Storyblok
+- Gatsby Transformer Sharp
