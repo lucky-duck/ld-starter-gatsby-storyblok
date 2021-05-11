@@ -164,3 +164,76 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 - Gatsby Source Filesystem
 - Gatsby Source Storyblok
 - Gatsby Transformer Sharp
+
+## 🏗 Included Utils
+
+- clientOnly.js
+  - Wrap your components, pages or Storyblok adapters with this to ensure they only render on the client-side. Useful for libraries that don't support SSR.
+  
+    ```
+    import React from "react";
+    import ClientOnly from "../utils/clientOnly";
+    
+    function myCoolComponent() {
+      return (
+        <ClientOnly>
+          <div>I'll only render on the client side. Neat, huh?</div>
+        </ClientOnly>
+      );
+    }
+    ```
+    
+- constants.js
+  - The clue's in the name, this holds constants for you.
+- isCurrentPathCreator.js
+  -   
+- mq.js
+  - Stands for `Media Queries`. Incredibly useful component that allows you to quickly create uniform responsive designs with `styled-components`. **Note:** Breakpoints are controlled in `contstants.js`.
+      ```
+    import React from "react";
+    import styled, {css} from "styled-components"
+    import mq from "../utils/mq";
+    
+    const ComponentContainer = styled.div`
+      height: 400px;
+      width: 400px;
+      font-size: 18px;
+
+      ${mq.desktopSmall(css`
+        height: 350px;
+        width: 350px;
+        font-size: 16px;
+      `)};
+
+      ${mq.tablet(css`
+        height: 300px;
+        width: 300px;
+        font-size: 14px;
+      `)};
+      
+      ${mq.mobile(css`
+        height: 200px;
+        width: 200px;
+        font-size: 12px;
+      `)};
+      
+      ${mq.mobileSmall(css`
+        height: 100px;
+        width: 100px;
+        font-size: 10px;
+      `)};
+    `;
+    
+    function myCoolComponent() {
+      return (
+        <ComponentContainer>
+          Check out Mr. Responsive
+        </ComponentContainer>
+      );
+    }
+    ```
+ 
+- parseStoryblokLink.js
+- scrollLocker.js
+- withLocation.js
+- gatsbyStoryblokImage
