@@ -202,41 +202,41 @@ import styled, {css} from "styled-components"
 import mq from "../utils/mq";
 
 const ComponentContainer = styled.div`
-    height: 400px;
-    width: 400px;
-    font-size: 18px;
+  height: 400px;
+  width: 400px;
+  font-size: 18px;
 
-    ${mq.desktopSmall(css`
-      height: 350px;
-      width: 350px;
-      font-size: 16px;
-    `)};
+  ${mq.desktopSmall(css`
+    height: 350px;
+    width: 350px;
+    font-size: 16px;
+  `)};
 
-    ${mq.tablet(css`
-      height: 300px;
-      width: 300px;
-      font-size: 14px;
-    `)};
+  ${mq.tablet(css`
+    height: 300px;
+    width: 300px;
+    font-size: 14px;
+  `)};
 
-    ${mq.mobile(css`
-      height: 200px;
-      width: 200px;
-      font-size: 12px;
-    `)};
+  ${mq.mobile(css`
+    height: 200px;
+    width: 200px;
+    font-size: 12px;
+  `)};
 
-    ${mq.mobileSmall(css`
-      height: 100px;
-      width: 100px;
-      font-size: 10px;
-    `)};
+  ${mq.mobileSmall(css`
+    height: 100px;
+    width: 100px;
+    font-size: 10px;
+  `)};
 `;
 
 function myCoolComponent() {
-    return (
-      <ComponentContainer>
-        Check out Mr. Responsive
-      </ComponentContainer>
-    );
+  return (
+    <ComponentContainer>
+      Check out Mr. Responsive
+    </ComponentContainer>
+  );
 }
 
 export default myCoolComponent;
@@ -344,11 +344,11 @@ Used to convert Storyblok image repsonses into a `gatsby-image` compatible forma
   import { getFluidGatsbyImage } from "../utils/gatsby-storyblok-image";
 
   function myCoolComponent({ image }) {
-      return (
-        <div>
-          <LazyImage fluid={getFluidGatsbyImage(image)} alt={"A fluid image, woo!"}/>
-        </div>
-      )
+    return (
+      <div>
+        <LazyImage fluid={getFluidGatsbyImage(image)} alt={"A fluid image, woo!"}/>
+      </div>
+    )
   }
 
   export default myCoolComponent
