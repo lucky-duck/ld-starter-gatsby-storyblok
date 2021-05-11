@@ -34,7 +34,7 @@ Kick off your project with this starter kit, jam-packed with useful utils, templ
 
     Your site is now running at `http://localhost:8000`!
 
-## 🧐 What's inside?
+## 🧐 Starter Overview
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
@@ -94,3 +94,5 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
+
+## 📚 Included Libraries
