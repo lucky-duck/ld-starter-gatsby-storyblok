@@ -163,7 +163,8 @@ The clue's in the name, this holds constants for you.
 Stands for `Media Queries`. Incredibly useful component that allows you to quickly create uniform responsive designs with `styled-components`. **Note:** Breakpoints are controlled in `contstants.js`.
   
 #### Usage
-```  
+
+```javascript 
 import React from "react";
 import styled, {css} from "styled-components"
 import mq from "../utils/mq";
@@ -214,7 +215,7 @@ Used to parse between the different types of links Storyblok return.
   
 #### Usage
   
-```
+```javascript
 import React from "react";
 import parseStoryblokLink from "../utils/parse-storyblok-link";
 
@@ -231,8 +232,8 @@ export default MyCoolComponent;
 Used to lock the page in place. Intended for use with pop-up overlays or full-screen menus.
   
 #### Usage
-  
-```
+
+```javascript
 import React, {useState} from "react";
 import { scrollLocker } from "../utils/scrollLocker";
 
@@ -262,7 +263,7 @@ Used to provide the component with information on its location on the site. Supp
 
 #### Usage
 
-```
+```javascript
 import React from "react";
 import withLocation from "../utils/withLocation";
   
@@ -282,7 +283,7 @@ Used to convert Storyblok image repsonses into a `gatsby-image` compatible forma
 
 #### Fixed Image Usage
 
-  ```
+```javascript
   import React from "react";
   
   import LazyImage from "../components/lazyImage";
@@ -306,7 +307,7 @@ Used to convert Storyblok image repsonses into a `gatsby-image` compatible forma
   
 #### Fluid Image Usage
   
-  ```
+```javascript
   import React from "react";
   
   import LazyImage from "../components/lazyImage";
@@ -334,7 +335,7 @@ Provides a simple way to format date and times.
 
 #### Usage
 
-```
+```javascript
   import React from "react";
   import { format } from 'date-fns'
   
@@ -359,7 +360,7 @@ An awesome animation library that works perfectly with `styled-components` to cr
 
 #### Usage
 
-```
+```javascript
   import React, {useState} from "react";
   import styled from "styled-components"
   import { motion } from 'framer-motion'
@@ -412,7 +413,7 @@ A useful library that detects if a component is in view.
 
 #### Usage
 
-```
+```javascript
   import React, {useState} from "react";
   import useInView from "react-cool-inview";
   
@@ -440,7 +441,7 @@ A useful library that detects when a user clicks outside of a component. Useful 
 
 #### Usage
 
-```
+```javascript
   import React, {useState} from "react";
   import styled from "styled-components"
   import useOnclickOutside from "react-cool-onclickoutside";
@@ -498,7 +499,7 @@ A useful library that detects when a user clicks outside of a component. Useful 
 
 #### Usage
 
-```
+```javascript
   import React, {useState} from "react";
   import styled from "styled-components"
   import useOnclickOutside from "react-cool-onclickoutside";
@@ -556,7 +557,7 @@ A useful library that detects when a user clicks outside of a component. Useful 
 
 #### Usage
 
-```
+```javascript
   import React, {useState} from "react";
   import styled from "styled-components"
   import useOnclickOutside from "react-cool-onclickoutside";
@@ -619,7 +620,7 @@ A useful library that detects when a user clicks outside of a component. Useful 
 
 #### Usage
 
-```
+```javascript
   import React, {useState} from "react";
   import styled from "styled-components"
   import useOnclickOutside from "react-cool-onclickoutside";
@@ -676,7 +677,7 @@ A useful library that detects when a user clicks outside of a component. Useful 
 
 #### Usage
 
-```
+```javascript
   import React, {useState} from "react";
   import styled from "styled-components"
   import useOnclickOutside from "react-cool-onclickoutside";
@@ -733,7 +734,7 @@ A useful library that detects when a user clicks outside of a component. Useful 
 
 #### Usage
 
-```
+```javascript
   import React, {useState} from "react";
   import styled from "styled-components"
   import useOnclickOutside from "react-cool-onclickoutside";
@@ -791,7 +792,7 @@ A useful library that detects when a user clicks outside of a component. Useful 
 
 #### Usage
 
-```
+```javascript
   import React, {useState} from "react";
   import styled from "styled-components"
   import useOnclickOutside from "react-cool-onclickoutside";
