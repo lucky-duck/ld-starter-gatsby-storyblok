@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
+  <a href="https://www.luckyduck.co">
     <img alt="Gatsby" src="https://ld-gatsby-storyblok-starter.netlify.app/static/share-d8f3fe0eb2d6c4f37271c33035e1947b.jpg" />
   </a>
 </p>
