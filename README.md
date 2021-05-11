@@ -311,6 +311,8 @@ import withLocation from "../utils/withLocation";
 ### gatsbyStoryblokImage
 Used to convert Storyblok image repsonses into a `gatsby-image` compatible format. Can be used for either a **fixed image** or a **fluid image**. Works well with the included `lazyImage.js` component.
 
+**Note:** This is a forked version of <a href="https://github.com/bejamas/gatsby-storyblok-image" target="_blank">Bejama's gatsby-storyblok-image</a>. It's forked as we've found the version available on NPM doesn't currently work properly.
+
 #### Fixed Image Usage
 
   ```
