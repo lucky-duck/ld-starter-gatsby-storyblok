@@ -495,353 +495,35 @@ A useful library that detects when a user clicks outside of a component. Useful 
 
 
 ### React Helmet
-A useful library that detects when a user clicks outside of a component. Useful for tooptips, popups and overlays.
-
-#### Usage
-
-```javascript
-  import React, {useState} from "react";
-  import styled from "styled-components"
-  import useOnclickOutside from "react-cool-onclickoutside";
-  
-  const OuterContainer = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  `;
-  
-  const PopupContainer = styled.div`
-    height: 500px;
-    width: 500px;
-    background-color: blue;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-  `;
-  
-  function MyCoolComponent() {
-    const [active, setActive] = useState(false);
-    
-    const ref = useOnclickOutside(() => {
-      setActive(false);
-    });
-    
-    return (
-      <OuterContainer ref={ref}>
-        {active && (
-          <PopupContainer>
-            Popup!
-          </PopupContainer>
-        )}
-        <button onClick={() => setActive(true)}>Display popup</button>
-      </OuterContainer>
-    )
-  }
-  
-  export default MyCoolComponent
-```
-
-#### Links
-<a href="https://www.npmjs.com/package/react-cool-onclickoutside" target="_blank">Library Link</a>
-
-<a href="https://github.com/wellyshen/react-cool-onclickoutside" target="_blank">Full Library Documentation</a>
 
 
 
 ### React Swiper
-A useful library that detects when a user clicks outside of a component. Useful for tooptips, popups and overlays.
-
-#### Usage
-
-```javascript
-  import React, {useState} from "react";
-  import styled from "styled-components"
-  import useOnclickOutside from "react-cool-onclickoutside";
-  
-  const OuterContainer = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  `;
-  
-  const PopupContainer = styled.div`
-    height: 500px;
-    width: 500px;
-    background-color: blue;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-  `;
-  
-  function MyCoolComponent() {
-    const [active, setActive] = useState(false);
-    
-    const ref = useOnclickOutside(() => {
-      setActive(false);
-    });
-    
-    return (
-      <OuterContainer ref={ref}>
-        {active && (
-          <PopupContainer>
-            Popup!
-          </PopupContainer>
-        )}
-        <button onClick={() => setActive(true)}>Display popup</button>
-      </OuterContainer>
-    )
-  }
-  
-  export default MyCoolComponent
-```
-
-#### Links
-<a href="https://www.npmjs.com/package/react-cool-onclickoutside" target="_blank">Library Link</a>
-
-<a href="https://github.com/wellyshen/react-cool-onclickoutside" target="_blank">Full Library Documentation</a>
 
 
 
 ### Storyblok JS Client
+
+
+
 ### Storyblok React
 
 
 
 ### Storyblok Rich Text React Renderer
-A useful library that detects when a user clicks outside of a component. Useful for tooptips, popups and overlays.
 
-#### Usage
-
-```javascript
-  import React, {useState} from "react";
-  import styled from "styled-components"
-  import useOnclickOutside from "react-cool-onclickoutside";
-  
-  const OuterContainer = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  `;
-  
-  const PopupContainer = styled.div`
-    height: 500px;
-    width: 500px;
-    background-color: blue;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-  `;
-  
-  function MyCoolComponent() {
-    const [active, setActive] = useState(false);
-    
-    const ref = useOnclickOutside(() => {
-      setActive(false);
-    });
-    
-    return (
-      <OuterContainer ref={ref}>
-        {active && (
-          <PopupContainer>
-            Popup!
-          </PopupContainer>
-        )}
-        <button onClick={() => setActive(true)}>Display popup</button>
-      </OuterContainer>
-    )
-  }
-  
-  export default MyCoolComponent
-```
-
-#### Links
-<a href="https://www.npmjs.com/package/react-cool-onclickoutside" target="_blank">Library Link</a>
-
-<a href="https://github.com/wellyshen/react-cool-onclickoutside" target="_blank">Full Library Documentation</a>
 
 
 ### Styled Components
-A useful library that detects when a user clicks outside of a component. Useful for tooptips, popups and overlays.
 
-#### Usage
-
-```javascript
-  import React, {useState} from "react";
-  import styled from "styled-components"
-  import useOnclickOutside from "react-cool-onclickoutside";
-  
-  const OuterContainer = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  `;
-  
-  const PopupContainer = styled.div`
-    height: 500px;
-    width: 500px;
-    background-color: blue;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-  `;
-  
-  function MyCoolComponent() {
-    const [active, setActive] = useState(false);
-    
-    const ref = useOnclickOutside(() => {
-      setActive(false);
-    });
-    
-    return (
-      <OuterContainer ref={ref}>
-        {active && (
-          <PopupContainer>
-            Popup!
-          </PopupContainer>
-        )}
-        <button onClick={() => setActive(true)}>Display popup</button>
-      </OuterContainer>
-    )
-  }
-  
-  export default MyCoolComponent
-```
-
-#### Links
-<a href="https://www.npmjs.com/package/react-cool-onclickoutside" target="_blank">Library Link</a>
-
-<a href="https://github.com/wellyshen/react-cool-onclickoutside" target="_blank">Full Library Documentation</a>
 
 
 ### Styled System
-A useful library that detects when a user clicks outside of a component. Useful for tooptips, popups and overlays.
-
-#### Usage
-
-```javascript
-  import React, {useState} from "react";
-  import styled from "styled-components"
-  import useOnclickOutside from "react-cool-onclickoutside";
-  
-  const OuterContainer = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  `;
-  
-  const PopupContainer = styled.div`
-    height: 500px;
-    width: 500px;
-    background-color: blue;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-  `;
-  
-  function MyCoolComponent() {
-    const [active, setActive] = useState(false);
-    
-    const ref = useOnclickOutside(() => {
-      setActive(false);
-    });
-    
-    return (
-      <OuterContainer ref={ref}>
-        {active && (
-          <PopupContainer>
-            Popup!
-          </PopupContainer>
-        )}
-        <button onClick={() => setActive(true)}>Display popup</button>
-      </OuterContainer>
-    )
-  }
-  
-  export default MyCoolComponent
-```
-
-#### Links
-<a href="https://www.npmjs.com/package/react-cool-onclickoutside" target="_blank">Library Link</a>
-
-<a href="https://github.com/wellyshen/react-cool-onclickoutside" target="_blank">Full Library Documentation</a>
 
 
 
 ### URL Loader
-A useful library that detects when a user clicks outside of a component. Useful for tooptips, popups and overlays.
 
-#### Usage
-
-```javascript
-  import React, {useState} from "react";
-  import styled from "styled-components"
-  import useOnclickOutside from "react-cool-onclickoutside";
-  
-  const OuterContainer = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  `;
-  
-  const PopupContainer = styled.div`
-    height: 500px;
-    width: 500px;
-    background-color: blue;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-  `;
-  
-  function MyCoolComponent() {
-    const [active, setActive] = useState(false);
-    
-    const ref = useOnclickOutside(() => {
-      setActive(false);
-    });
-    
-    return (
-      <OuterContainer ref={ref}>
-        {active && (
-          <PopupContainer>
-            Popup!
-          </PopupContainer>
-        )}
-        <button onClick={() => setActive(true)}>Display popup</button>
-      </OuterContainer>
-    )
-  }
-  
-  export default MyCoolComponent
-```
-
-#### Links
-<a href="https://www.npmjs.com/package/react-cool-onclickoutside" target="_blank">Library Link</a>
-
-<a href="https://github.com/wellyshen/react-cool-onclickoutside" target="_blank">Full Library Documentation</a>
 
 
 ## Gatsby Plugins
